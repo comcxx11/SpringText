@@ -10,7 +10,7 @@ import UIKit
 import SpringText
 
 class ViewController: UIViewController {
-    @IBOutlet weak var lblTitle: TPCountLabel!
+    @IBOutlet weak var lblTitle: SPLabel!
     
     override func viewDidLoad() {
         lblTitle.text(num: 28787123)

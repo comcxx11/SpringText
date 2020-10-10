@@ -7,7 +7,7 @@
 
 import UIKit
 
-open class TPCountLabel: UILabel {
+open class SPLabel: UILabel {
     var fullText = ""
     private var hasWon: Bool = true
     
@@ -166,13 +166,5 @@ open class TPCountLabel: UILabel {
             
             offset += self.durationOffset
         }
-    }
-}
-
-
-open class SPLabel: UILabel {
-    public func updateDisplay() {
-        self.text = "Update"
-        self.sizeToFit()
     }
 }
