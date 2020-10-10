@@ -12,6 +12,12 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ![img](example.gif)
 
 ## Requirements
+- iOS 9.3
+
+## Usage
+```swift
+lblAmount.text(num:192398)
+```
 
 ## Installation
 
