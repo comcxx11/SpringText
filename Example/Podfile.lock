@@ -1,0 +1,16 @@
+PODS:
+  - SpringText (0.1.0)
+
+DEPENDENCIES:
+  - SpringText (from `../`)
+
+EXTERNAL SOURCES:
+  SpringText:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SpringText: 42828348447e8b54e03ddc61ff4e4d9a876c67a0
+
+PODFILE CHECKSUM: 98679c547f29a046fbb0c5aa6e8f642bc8eee8b1
+
+COCOAPODS: 1.10.0.rc.1

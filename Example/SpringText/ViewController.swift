@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import SpringText
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        Test.ok()
     }
 
     override func didReceiveMemoryWarning() {

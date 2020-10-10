@@ -1,0 +1,6 @@
+framework module SpringText {
+  umbrella header "SpringText-umbrella.h"
+
+  export *
+  module * { export * }
+}

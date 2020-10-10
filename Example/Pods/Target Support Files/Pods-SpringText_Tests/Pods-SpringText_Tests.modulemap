@@ -1,0 +1,6 @@
+framework module Pods_SpringText_Tests {
+  umbrella header "Pods-SpringText_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
