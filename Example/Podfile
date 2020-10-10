@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SpringText_Example' do
+  pod 'SpringText', :path => '../'
+
+  target 'SpringText_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
