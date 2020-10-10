@@ -12,8 +12,8 @@
 		0EC9E69D5E6C98D41DB1E8D41B660EE5 /* SpringText-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 808B5019A7FFF30F87B850B4EB8ED15F /* SpringText-dummy.m */; };
 		50382AE52E33C7B00D373EF33C17D54B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		59E0EB739C46B7DE8C05E54080ED3C58 /* Pods-SpringText_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFD1CE15815EF8E9ADA2AE96ABF7B34 /* Pods-SpringText_Example-dummy.m */; };
+		B4B0030825320AD20085B7E8 /* SPLabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B0030725320AD20085B7E8 /* SPLabelExtension.swift */; };
 		B701587EC4E18E0E4FC54CACB3EBB39F /* SpringText-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9825F5DC5B6D5BA160933B6DDB6B2078 /* SpringText-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B9B05AAF253192AB004BFAC7 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B05AAD253192AB004BFAC7 /* ReplaceMe.swift */; };
 		B9B05AB0253192AB004BFAC7 /* SPLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B05AAE253192AB004BFAC7 /* SPLabel.swift */; };
 		D79E7F79754B8BD138A3D1BE6CEE48B0 /* Pods-SpringText_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB49BF8C7257821BA3860A1AAE19916 /* Pods-SpringText_Tests-dummy.m */; };
 		F21F25DDDDAF3D155AFDC5308927C354 /* Pods-SpringText_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC578FA28A3A646413771602D624951B /* Pods-SpringText_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -63,7 +63,7 @@
 		A6DD512C44CF2719FB64AB83C3C6F36A /* Pods-SpringText_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpringText_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		ABAC7E1E4E5644497A9698FC8AF79825 /* SpringText.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SpringText.release.xcconfig; sourceTree = "<group>"; };
 		B329580B2806CB714F899A375098A894 /* Pods-SpringText_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SpringText_Example-frameworks.sh"; sourceTree = "<group>"; };
-		B9B05AAD253192AB004BFAC7 /* ReplaceMe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = SpringText/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		B4B0030725320AD20085B7E8 /* SPLabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SPLabelExtension.swift; path = SpringText/Classes/SPLabelExtension.swift; sourceTree = "<group>"; };
 		B9B05AAE253192AB004BFAC7 /* SPLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SPLabel.swift; path = SpringText/Classes/SPLabel.swift; sourceTree = "<group>"; };
 		C4422F2C636EDF260D07652C15DF218A /* SpringText-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SpringText-prefix.pch"; sourceTree = "<group>"; };
 		C9E323C9FAA0D83C153DA93E04D93E0B /* Pods_SpringText_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpringText_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,7 +179,7 @@
 		74E108B88D5FDF5B110189BB4436FF24 /* SpringText */ = {
 			isa = PBXGroup;
 			children = (
-				B9B05AAD253192AB004BFAC7 /* ReplaceMe.swift */,
+				B4B0030725320AD20085B7E8 /* SPLabelExtension.swift */,
 				B9B05AAE253192AB004BFAC7 /* SPLabel.swift */,
 				2BAB9541E6293DF3472C89FD65CC754C /* Pod */,
 				01F9E51AFF0E1D112AF787F243DFCC8D /* Support Files */,
@@ -375,8 +375,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9B05AAF253192AB004BFAC7 /* ReplaceMe.swift in Sources */,
 				0EC9E69D5E6C98D41DB1E8D41B660EE5 /* SpringText-dummy.m in Sources */,
+				B4B0030825320AD20085B7E8 /* SPLabelExtension.swift in Sources */,
 				B9B05AB0253192AB004BFAC7 /* SPLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
