@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import QuartzCore
 
 extension UILabel {
     func textWidth() -> CGFloat {
@@ -27,15 +26,6 @@ extension UILabel {
         let rect = CGSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude)
         let labelSize = myText.boundingRect(with: rect, options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font: font], context: nil)
         return ceil(labelSize.width)
-    }
-}
-
-
-extension TPCountLabel {
-    func text(num: Int, hasWon: Bool = true) {
-        self.hasWon = hasWon
-        self.configure(with: num)
-        self.animate()
     }
 }
 
@@ -73,6 +63,12 @@ open class TPCountLabel: UILabel {
     private let duration = 0.7
     private let durationOffset = 0.2
     private let textsNotAnimated = [","]
+    
+    public func text(num: Int, hasWon: Bool = true) {
+        self.hasWon = hasWon
+        self.configure(with: num)
+        self.animate()
+    }
     
     public func configure(with number: Int) {
         let text = number.currency
@@ -200,7 +196,7 @@ open class TPCountLabel: UILabel {
             
             let animation = CABasicAnimation(keyPath: "sublayerTransform.translation.y")
             animation.duration = duration + offset
-//            animation.timingFunction = CAMediaTimingFunction(name: .easeOut)
+            animation.timingFunction = CAMediaTimingFunction(name: .easeOut)
             
             if ascending {
                 animation.fromValue = maxY
@@ -210,7 +206,7 @@ open class TPCountLabel: UILabel {
                 animation.toValue = maxY
             }
             
-//            scrollLayer.scrollMode = .vertically
+            scrollLayer.scrollMode = .vertically
             // custom key 설정
             scrollLayer.add(animation, forKey: nil)
             scrollLayer.scroll(to: CGPoint(x: 0, y: maxY))

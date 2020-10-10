@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var lblTitle: TPCountLabel!
     
     override func viewDidLoad() {
-        lblTitle.configure(with:10)
+        lblTitle.text(num: 28787123)
     }
 
     override func didReceiveMemoryWarning() {
