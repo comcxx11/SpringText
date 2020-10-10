@@ -12,8 +12,9 @@
 		0EC9E69D5E6C98D41DB1E8D41B660EE5 /* SpringText-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 808B5019A7FFF30F87B850B4EB8ED15F /* SpringText-dummy.m */; };
 		50382AE52E33C7B00D373EF33C17D54B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		59E0EB739C46B7DE8C05E54080ED3C58 /* Pods-SpringText_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFD1CE15815EF8E9ADA2AE96ABF7B34 /* Pods-SpringText_Example-dummy.m */; };
-		9E0BD858A1704EF6A4FF7F8D65461796 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E91F8B517D31B09FE0BE54A99557262 /* ReplaceMe.swift */; };
 		B701587EC4E18E0E4FC54CACB3EBB39F /* SpringText-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9825F5DC5B6D5BA160933B6DDB6B2078 /* SpringText-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9B05AAF253192AB004BFAC7 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B05AAD253192AB004BFAC7 /* ReplaceMe.swift */; };
+		B9B05AB0253192AB004BFAC7 /* SPLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B05AAE253192AB004BFAC7 /* SPLabel.swift */; };
 		D79E7F79754B8BD138A3D1BE6CEE48B0 /* Pods-SpringText_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB49BF8C7257821BA3860A1AAE19916 /* Pods-SpringText_Tests-dummy.m */; };
 		F21F25DDDDAF3D155AFDC5308927C354 /* Pods-SpringText_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC578FA28A3A646413771602D624951B /* Pods-SpringText_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F606F4CE5A28C1B49C5566F3E282A171 /* Pods-SpringText_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B8B628E7026235C431F48596537EDA3 /* Pods-SpringText_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -42,30 +43,31 @@
 		0D1A63004124C4EDF11506CA673A1866 /* Pods-SpringText_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpringText_Tests-Info.plist"; sourceTree = "<group>"; };
 		11F231F400C7E21CDC1FD16E2D6E4E67 /* SpringText-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SpringText-Info.plist"; sourceTree = "<group>"; };
 		3466844463D092FEC23761F18C51FCBE /* SpringText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SpringText.debug.xcconfig; sourceTree = "<group>"; };
-		38855927E007797A49CF25EC449D72F9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		38855927E007797A49CF25EC449D72F9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		59F243DB44DB3BA2FF1A94A658EDBE4A /* Pods-SpringText_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpringText_Example.release.xcconfig"; sourceTree = "<group>"; };
-		5D09B1ACE46436DB7FB2CE2517D734CD /* SpringText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SpringText.framework; path = SpringText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D09B1ACE46436DB7FB2CE2517D734CD /* SpringText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpringText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B8B628E7026235C431F48596537EDA3 /* Pods-SpringText_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SpringText_Tests-umbrella.h"; sourceTree = "<group>"; };
-		6EFA2E766D5EA4C02F370C3FD16A496D /* SpringText.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SpringText.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6EFA2E766D5EA4C02F370C3FD16A496D /* SpringText.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SpringText.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		792D0F600379AEA8C8804295080565DC /* Pods-SpringText_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpringText_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		7AB49BF8C7257821BA3860A1AAE19916 /* Pods-SpringText_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SpringText_Tests-dummy.m"; sourceTree = "<group>"; };
-		7E91F8B517D31B09FE0BE54A99557262 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = SpringText/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		808B5019A7FFF30F87B850B4EB8ED15F /* SpringText-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SpringText-dummy.m"; sourceTree = "<group>"; };
 		819B7A7E214DCCD9E0335E9A7E349E41 /* Pods-SpringText_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SpringText_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93399EA310C5F2DD322F3EB7D7D76B3A /* Pods-SpringText_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SpringText_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9825F5DC5B6D5BA160933B6DDB6B2078 /* SpringText-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SpringText-umbrella.h"; sourceTree = "<group>"; };
 		9C53EA2E0C3E36C01BDFD018334085D1 /* Pods-SpringText_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SpringText_Example.modulemap"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E895743EE3951438C6FC65E2409A579 /* Pods-SpringText_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpringText_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		9FFCB9B0A693EBF0CFAA777610E1EAA8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		9FFCB9B0A693EBF0CFAA777610E1EAA8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A0F8B2A60E94B27420CFF1ACBEC63B5E /* Pods-SpringText_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SpringText_Tests.modulemap"; sourceTree = "<group>"; };
 		A6DD512C44CF2719FB64AB83C3C6F36A /* Pods-SpringText_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpringText_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		ABAC7E1E4E5644497A9698FC8AF79825 /* SpringText.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SpringText.release.xcconfig; sourceTree = "<group>"; };
 		B329580B2806CB714F899A375098A894 /* Pods-SpringText_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SpringText_Example-frameworks.sh"; sourceTree = "<group>"; };
+		B9B05AAD253192AB004BFAC7 /* ReplaceMe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = SpringText/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		B9B05AAE253192AB004BFAC7 /* SPLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SPLabel.swift; path = SpringText/Classes/SPLabel.swift; sourceTree = "<group>"; };
 		C4422F2C636EDF260D07652C15DF218A /* SpringText-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SpringText-prefix.pch"; sourceTree = "<group>"; };
-		C9E323C9FAA0D83C153DA93E04D93E0B /* Pods_SpringText_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SpringText_Tests.framework; path = "Pods-SpringText_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1A0D6460804383A1223249ECB421E07 /* Pods_SpringText_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SpringText_Example.framework; path = "Pods-SpringText_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9E323C9FAA0D83C153DA93E04D93E0B /* Pods_SpringText_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpringText_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1A0D6460804383A1223249ECB421E07 /* Pods_SpringText_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpringText_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEFD1CE15815EF8E9ADA2AE96ABF7B34 /* Pods-SpringText_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SpringText_Example-dummy.m"; sourceTree = "<group>"; };
 		EA13AA826194E7BAD379FC4BC821CA44 /* SpringText.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SpringText.modulemap; sourceTree = "<group>"; };
 		F698F8983A273FC61F78EF796EF0220D /* Pods-SpringText_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpringText_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -177,7 +179,8 @@
 		74E108B88D5FDF5B110189BB4436FF24 /* SpringText */ = {
 			isa = PBXGroup;
 			children = (
-				7E91F8B517D31B09FE0BE54A99557262 /* ReplaceMe.swift */,
+				B9B05AAD253192AB004BFAC7 /* ReplaceMe.swift */,
+				B9B05AAE253192AB004BFAC7 /* SPLabel.swift */,
 				2BAB9541E6293DF3472C89FD65CC754C /* Pod */,
 				01F9E51AFF0E1D112AF787F243DFCC8D /* Support Files */,
 			);
@@ -317,6 +320,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					A63211ACD1EFE47329949A0D6A50180A = {
+						LastSwiftMigration = 1200;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -367,8 +375,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E0BD858A1704EF6A4FF7F8D65461796 /* ReplaceMe.swift in Sources */,
+				B9B05AAF253192AB004BFAC7 /* ReplaceMe.swift in Sources */,
 				0EC9E69D5E6C98D41DB1E8D41B660EE5 /* SpringText-dummy.m in Sources */,
+				B9B05AB0253192AB004BFAC7 /* SPLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +419,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3466844463D092FEC23761F18C51FCBE /* SpringText.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -429,6 +439,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -524,8 +535,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -633,6 +643,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ABAC7E1E4E5644497A9698FC8AF79825 /* SpringText.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
