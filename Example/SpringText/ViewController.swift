@@ -10,12 +10,10 @@ import UIKit
 import SpringText
 
 class ViewController: UIViewController {
-    @IBOutlet weak var lblTitle: SPLabel!
+    @IBOutlet weak var lblTitle: TPCountLabel!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        lblTitle.text = "OK"
-        lblTitle.updateDisplay()
+        lblTitle.configure(with:10)
     }
 
     override func didReceiveMemoryWarning() {
