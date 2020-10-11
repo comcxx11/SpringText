@@ -19,6 +19,11 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 lblAmount.text(num:192398)
 ```
 
+```swift
+lblAmount.setCurrency(symbol: "￦")
+lblAmount.text(num:192398, showCurrency:true)
+```
+
 ## Installation
 
 SpringText is available through [CocoaPods](https://cocoapods.org). To install
