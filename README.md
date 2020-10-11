@@ -16,6 +16,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 - iOS 9.3
 
 ## Usage
+
+The usage is very similar to `UITextField` text properties.
+`SPLabel` has two options: Normal, Currency
 ```swift
 lblAmount.text(num:192398)
 ```
