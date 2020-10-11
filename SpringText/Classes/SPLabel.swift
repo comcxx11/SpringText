@@ -9,21 +9,26 @@ import UIKit
 
 open class SPLabel: UILabel {
     var fullText = ""
-    private var hasWon: Bool = true
-    
+    private var currencySymbol: String = "$"
+    private var showCurrency: Bool = true
     private var scrollLayers: [CAScrollLayer] = []
     private var scrollLabels: [UILabel] = []
     private let duration = 0.7
     private let durationOffset = 0.2
     private let textsNotAnimated = [","]
     
-    public func text(num: Int, hasWon: Bool = true) {
-        self.hasWon = hasWon
+    public func text(num: Int, showCurrency: Bool = false) {
+        self.showCurrency = showCurrency
         self.configure(with: num)
+        self.text = " "
         self.animate()
     }
     
-    public func configure(with number: Int) {
+    public func setCurrency(symbol: String) {
+        self.currencySymbol = symbol
+    }
+    
+    private func configure(with number: Int) {
         let text = number.currency
         fullText = text
         clean()
@@ -47,8 +52,8 @@ open class SPLabel: UILabel {
         var x: CGFloat = 0
         let y: CGFloat = 0
         if self.textAlignment == .center {
-            if hasWon {
-                self.text = "￦ \(fullText)"
+            if showCurrency {
+                self.text = "\(currencySymbol) \(fullText)"
             } else {
                 self.text = fullText
             }
@@ -56,8 +61,8 @@ open class SPLabel: UILabel {
             self.text = ""          // 초기화
             x = -(w / 2)
         } else if self.textAlignment == .right {
-            if hasWon {
-                self.text = "￦ \(fullText)"
+            if showCurrency {
+                self.text = "\(currencySymbol) \(fullText)"
             } else {
                 self.text = fullText
             }
@@ -66,12 +71,12 @@ open class SPLabel: UILabel {
             x = -w
         }
         
-        if hasWon {
+        if showCurrency {
             let wLabel = UILabel()
             wLabel.frame.origin = CGPoint(x: x, y: y)
             wLabel.textColor = textColor
             wLabel.font = font
-            wLabel.text = "￦ "
+            wLabel.text = "\(currencySymbol) "
             wLabel.textAlignment = .center
             wLabel.sizeToFit()
             self.addSubview(wLabel)

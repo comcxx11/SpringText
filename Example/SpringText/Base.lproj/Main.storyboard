@@ -20,23 +20,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIj-hc-Uk3" customClass="SPLabel" customModule="SpringText">
-                                <rect key="frame" x="36" y="20" width="303" height="21"/>
-                                <color key="backgroundColor" systemColor="systemPinkColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3LM-BG-Htn">
+                                <rect key="frame" x="36" y="20" width="303" height="82"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7yP-7o-4da">
+                                        <rect key="frame" x="0.0" y="0.0" width="303" height="82"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qrS-6m-9He" customClass="SPLabel" customModule="SpringText">
+                                                <rect key="frame" x="0.0" y="0.0" width="303" height="20.5"/>
+                                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBh-YJ-BoT" customClass="SPLabel" customModule="SpringText">
+                                                <rect key="frame" x="0.0" y="20.5" width="303" height="20.5"/>
+                                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rf9-rt-EBr" customClass="SPLabel" customModule="SpringText">
+                                                <rect key="frame" x="0.0" y="41" width="303" height="20.5"/>
+                                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iN-kW-35e" customClass="SPLabel" customModule="SpringText">
+                                                <rect key="frame" x="0.0" y="61.5" width="303" height="20.5"/>
+                                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="7yP-7o-4da" firstAttribute="top" secondItem="3LM-BG-Htn" secondAttribute="top" id="1rI-mN-dRX"/>
+                                    <constraint firstAttribute="bottom" secondItem="7yP-7o-4da" secondAttribute="bottom" id="4GE-cQ-wXO"/>
+                                    <constraint firstItem="7yP-7o-4da" firstAttribute="leading" secondItem="3LM-BG-Htn" secondAttribute="leading" id="6AU-ft-2es"/>
+                                    <constraint firstAttribute="trailing" secondItem="7yP-7o-4da" secondAttribute="trailing" id="axb-91-Sqz"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
                         <constraints>
-                            <constraint firstItem="sIj-hc-Uk3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="6B7-u4-i0a"/>
-                            <constraint firstItem="sIj-hc-Uk3" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="E34-np-fky"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="sIj-hc-Uk3" secondAttribute="trailing" constant="20" id="tdT-yc-Eq0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3LM-BG-Htn" secondAttribute="trailing" constant="20" id="WYg-5C-Mkb"/>
+                            <constraint firstItem="3LM-BG-Htn" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="kRI-LW-LDA"/>
+                            <constraint firstItem="3LM-BG-Htn" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="tSU-RG-g9K"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="lblTitle" destination="sIj-hc-Uk3" id="LcL-HP-JCM"/>
+                        <outlet property="lbl_num1" destination="qrS-6m-9He" id="CFT-NY-clj"/>
+                        <outlet property="lbl_num2" destination="WBh-YJ-BoT" id="jHa-oz-N7W"/>
+                        <outlet property="lbl_num3" destination="Rf9-rt-EBr" id="kMY-CQ-0dl"/>
+                        <outlet property="lbl_num4" destination="9iN-kW-35e" id="bXU-lr-i0d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -45,8 +86,14 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
