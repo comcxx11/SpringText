@@ -1,5 +1,6 @@
 # SpringText
 
+[![Language](https://img.shields.io/badge/Swift-4%20%26%205-orange.svg)]()
 [![CI Status](https://img.shields.io/travis/comcxx11/SpringText.svg?style=flat)](https://travis-ci.org/comcxx11/SpringText)
 [![Version](https://img.shields.io/cocoapods/v/SpringText.svg?style=flat)](https://cocoapods.org/pods/SpringText)
 [![License](https://img.shields.io/cocoapods/l/SpringText.svg?style=flat)](https://cocoapods.org/pods/SpringText)
