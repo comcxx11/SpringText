@@ -15,12 +15,14 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  macOS_5_2:
-    name: Test macOS (5.2)
+  name: Test iOS 
     runs-on: macOS-latest
     env: 
-      DEVELOPER_DIR: /Applications/Xcode_11.7.app/Contents/Developer
+      DEVELOPER_DIR: /Applications/Xcode_12.app/Contents/Developer
+    strategy:
+      matrix:
+        destination: ["OS=14.0,name=iPhone 11 Pro"] #, "OS=12.4,name=iPhone XS", "OS=11.4,name=iPhone X", "OS=10.3.1,name=iPhone SE"]
     steps:
       - uses: actions/checkout@v2
-      - name: macOS (5.2)
-        run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -project "SpringText.xcodeproj" -scheme "SpringText iOS" -destination "platform=iOS" clean test | xcpretty
+      - name: iOS - ${{ matrix.destination }}
+        run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -project "SpringText.xcodeproj" -scheme "SpringText-Example" -destination "${{ matrix.destination }}" clean test | xcpretty
