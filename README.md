@@ -23,6 +23,13 @@ The usage is very similar to `UITextField` text properties.
 lblAmount.text(num:192398)
 ```
 
+`isCurrency`, `showSymbol` is display options
+```
+lbl_num1.isCurrency = false
+lbl_num1.showSymbol = false
+lbl_num1.text(num: 1000000000)
+```
+
 Default currency symbol is `dollor` sign `$`
 ```swift
 lblAmount.setCurrency(symbol: "￦")
