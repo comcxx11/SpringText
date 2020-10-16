@@ -8,17 +8,19 @@
 import UIKit
 
 open class SPLabel: UILabel {
-    var fullText = ""
+    private var fullText = ""
+    
+    open var isCurrency = true
+    
     private var currencySymbol: String = "$"
-    private var showCurrency: Bool = true
+    open var showSymbol = true
     private var scrollLayers: [CAScrollLayer] = []
     private var scrollLabels: [UILabel] = []
     private let duration = 0.7
     private let durationOffset = 0.2
     private let textsNotAnimated = [","]
     
-    public func text(num: Int, showCurrency: Bool = false) {
-        self.showCurrency = showCurrency
+    public func text(num: Int) {
         self.configure(with: num)
         self.text = " "
         self.animate()
@@ -29,8 +31,12 @@ open class SPLabel: UILabel {
     }
     
     private func configure(with number: Int) {
-        let text = number.currency
-        fullText = text
+        if isCurrency {
+            fullText = number.currency
+        } else {
+            fullText = String(number)
+        }
+        
         clean()
         setupSubviews()
     }
@@ -52,7 +58,7 @@ open class SPLabel: UILabel {
         var x: CGFloat = 0
         let y: CGFloat = 0
         if self.textAlignment == .center {
-            if showCurrency {
+            if showSymbol {
                 self.text = "\(currencySymbol) \(fullText)"
             } else {
                 self.text = fullText
@@ -61,7 +67,7 @@ open class SPLabel: UILabel {
             self.text = ""          // 초기화
             x = -(w / 2)
         } else if self.textAlignment == .right {
-            if showCurrency {
+            if showSymbol {
                 self.text = "\(currencySymbol) \(fullText)"
             } else {
                 self.text = fullText
@@ -71,7 +77,7 @@ open class SPLabel: UILabel {
             x = -w
         }
         
-        if showCurrency {
+        if showSymbol {
             let wLabel = UILabel()
             wLabel.frame.origin = CGPoint(x: x, y: y)
             wLabel.textColor = textColor
