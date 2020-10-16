@@ -23,7 +23,7 @@ The usage is very similar to `UITextField` text properties.
 lblAmount.text(num:192398)
 ```
 
-`isCurrency`, `showSymbol` is display options
+`isCurrency`, `showSymbol` are display options
 ```
 lbl_num1.isCurrency = false
 lbl_num1.showSymbol = false
