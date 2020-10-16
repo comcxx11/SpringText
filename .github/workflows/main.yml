@@ -1,0 +1,28 @@
+# This is a basic workflow to help you get started with Actions
+
+name: SpringText CI
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: 
+      - master
+      - hotfix
+  pull_request:
+    branches:
+      - '*'
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  name: Test iOS 
+    runs-on: macOS-latest
+    env: 
+      DEVELOPER_DIR: /Applications/Xcode_12.app/Contents/Developer
+    strategy:
+      matrix:
+        destination: ["OS=14.0,name=iPhone 11 Pro"] #, "OS=12.4,name=iPhone XS", "OS=11.4,name=iPhone X", "OS=10.3.1,name=iPhone SE"]
+    steps:
+      - uses: actions/checkout@v2
+      - name: iOS - ${{ matrix.destination }}
+        run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -project "SpringText.xcodeproj" -scheme "SpringText-Example" -destination "${{ matrix.destination }}" clean test | xcpretty
