@@ -24,7 +24,7 @@ lblAmount.text(num:192398)
 ```
 
 `isCurrency`, `showSymbol` are display options
-```
+```swift
 lbl_num1.isCurrency = false
 lbl_num1.showSymbol = false
 lbl_num1.text(num: 1000000000)
