@@ -8,12 +8,19 @@
 import UIKit
 
 open class SPLabel: UILabel {
+    
+    public enum SymbolPosition {
+        case front
+        case back
+    }
+    
     private var fullText = ""
     
     open var isCurrency = true
     
     private var currencySymbol: String = "$"
     open var showSymbol = true
+    private var symbolPosition: SymbolPosition = .front
     private var scrollLayers: [CAScrollLayer] = []
     private var scrollLabels: [UILabel] = []
     private let duration = 0.7
@@ -26,8 +33,9 @@ open class SPLabel: UILabel {
         self.animate()
     }
     
-    public func setCurrency(symbol: String) {
+    public func setCurrency(symbol: String, symbolPosition: SymbolPosition) {
         self.currencySymbol = symbol
+        self.symbolPosition = symbolPosition
     }
     
     private func configure(with number: Int) {
@@ -77,43 +85,85 @@ open class SPLabel: UILabel {
             x = -w
         }
         
-        if showSymbol {
-            let wLabel = UILabel()
-            wLabel.frame.origin = CGPoint(x: x, y: y)
-            wLabel.textColor = textColor
-            wLabel.font = font
-            wLabel.text = "\(currencySymbol) "
-            wLabel.textAlignment = .center
-            wLabel.sizeToFit()
-            self.addSubview(wLabel)
-            x += wLabel.bounds.width
-        }
-        
-        stringArray.enumerated().forEach { index, text in
-            if textsNotAnimated.contains(text) {
-                // 콤마
-                let label = UILabel()
-                label.frame.origin = CGPoint(x: x, y: y)
-                label.textColor = textColor
-                label.font = font
-                label.text = text
-                label.textAlignment = .center
-                label.sizeToFit()
-                self.addSubview(label)
-                
-                x += label.bounds.width
-            } else {
-                // 숫자
-                let label = UILabel()
-                label.frame.origin = CGPoint(x: x, y: y)
-                label.textColor = textColor
-                label.font = font
-                label.text = "0"
-                label.textAlignment = .center
-                label.sizeToFit()
-                createScrollLayer(to: label, text: text)
-                
-                x += label.bounds.width
+        switch symbolPosition {
+        case .front:
+            if showSymbol {
+                let wLabel = UILabel()
+                wLabel.frame.origin = CGPoint(x: x, y: y)
+                wLabel.textColor = textColor
+                wLabel.font = font
+                wLabel.text = "\(currencySymbol) "
+                wLabel.textAlignment = .center
+                wLabel.sizeToFit()
+                self.addSubview(wLabel)
+                x += wLabel.bounds.width
+            }
+            stringArray.enumerated().forEach { index, text in
+                if textsNotAnimated.contains(text) {
+                    // 콤마
+                    let label = UILabel()
+                    label.frame.origin = CGPoint(x: x, y: y)
+                    label.textColor = textColor
+                    label.font = font
+                    label.text = text
+                    label.textAlignment = .center
+                    label.sizeToFit()
+                    self.addSubview(label)
+                    
+                    x += label.bounds.width
+                } else {
+                    // 숫자
+                    let label = UILabel()
+                    label.frame.origin = CGPoint(x: x, y: y)
+                    label.textColor = textColor
+                    label.font = font
+                    label.text = "0"
+                    label.textAlignment = .center
+                    label.sizeToFit()
+                    createScrollLayer(to: label, text: text)
+                    
+                    x += label.bounds.width
+                }
+            }
+        case .back:
+            stringArray.enumerated().forEach { index, text in
+                if textsNotAnimated.contains(text) {
+                    // 콤마
+                    let label = UILabel()
+                    label.frame.origin = CGPoint(x: x, y: y)
+                    label.textColor = textColor
+                    label.font = font
+                    label.text = text
+                    label.textAlignment = .center
+                    label.sizeToFit()
+                    self.addSubview(label)
+                    
+                    x += label.bounds.width
+                } else {
+                    // 숫자
+                    let label = UILabel()
+                    label.frame.origin = CGPoint(x: x, y: y)
+                    label.textColor = textColor
+                    label.font = font
+                    label.text = "0"
+                    label.textAlignment = .center
+                    label.sizeToFit()
+                    createScrollLayer(to: label, text: text)
+                    
+                    x += label.bounds.width
+                }
+            }
+            
+            if showSymbol {
+                let wLabel = UILabel()
+                wLabel.frame.origin = CGPoint(x: x, y: y)
+                wLabel.textColor = textColor
+                wLabel.font = font
+                wLabel.text = "\(currencySymbol) "
+                wLabel.textAlignment = .center
+                wLabel.sizeToFit()
+                self.addSubview(wLabel)
+                x += wLabel.bounds.width
             }
         }
     }
